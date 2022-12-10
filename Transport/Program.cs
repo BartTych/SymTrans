@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +29,7 @@ namespace Symulation
                 for (double j = 10; j < 14; j++)// DC length
                 {
 
+                
                 
                 var symulation = new Symulation_control(CityMap,list_of_modules, i, 0, j);// w tej mapie sort powinien miec max 28 m inaczej cos jest nietak z mapa
                 
