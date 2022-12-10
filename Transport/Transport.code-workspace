@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../FastProfile"
+		},
+		{
+			"path": "../City"
+		},
+		{
+			"path": "../TrafficMenagement"
+		},
+		{
+			"path": "../Symulation"
+		},
+		{
+			"path": "../RouteSearch"
+		},
+		{
+			"path": "../Animation"
+		}
+	],
+	"settings": {
+
+		
+			"compilerOptions": {
+			  "jsx": "react"
+			}
+		  
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-dotnettools.csharp"
+		]
+	}
+}

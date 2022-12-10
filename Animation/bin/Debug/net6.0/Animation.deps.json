@@ -1,0 +1,94 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Animation/1.0.0": {
+        "dependencies": {
+          "City": "1.0.0",
+          "Symulation": "1.0.0",
+          "TrafficMenagement": "1.0.0"
+        },
+        "runtime": {
+          "Animation.dll": {}
+        }
+      },
+      "City/1.0.0": {
+        "runtime": {
+          "City.dll": {}
+        }
+      },
+      "FastProfile/1.0.0": {
+        "dependencies": {
+          "City": "1.0.0"
+        },
+        "runtime": {
+          "FastProfile.dll": {}
+        }
+      },
+      "RouteSearch/1.0.0": {
+        "dependencies": {
+          "City": "1.0.0"
+        },
+        "runtime": {
+          "RouteSearch.dll": {}
+        }
+      },
+      "Symulation/1.0.0": {
+        "dependencies": {
+          "City": "1.0.0",
+          "RouteSearch": "1.0.0",
+          "TrafficMenagement": "1.0.0"
+        },
+        "runtime": {
+          "Symulation.dll": {}
+        }
+      },
+      "TrafficMenagement/1.0.0": {
+        "dependencies": {
+          "City": "1.0.0",
+          "FastProfile": "1.0.0",
+          "RouteSearch": "1.0.0"
+        },
+        "runtime": {
+          "TrafficMenagement.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Animation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "City/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FastProfile/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RouteSearch/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Symulation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrafficMenagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

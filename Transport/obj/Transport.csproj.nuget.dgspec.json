@@ -1,0 +1,423 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/Transport.csproj": {}
+  },
+  "projects": {
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/Animation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/Animation.csproj",
+        "projectName": "Animation",
+        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/Animation.csproj",
+        "packagesPath": "/Users/bart/.nuget/packages/",
+        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bart/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj",
+        "projectName": "City",
+        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj",
+        "packagesPath": "/Users/bart/.nuget/packages/",
+        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bart/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj",
+        "projectName": "FastProfile",
+        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj",
+        "packagesPath": "/Users/bart/.nuget/packages/",
+        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bart/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj",
+        "projectName": "RouteSearch",
+        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj",
+        "packagesPath": "/Users/bart/.nuget/packages/",
+        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bart/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj",
+        "projectName": "Symulation",
+        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj",
+        "packagesPath": "/Users/bart/.nuget/packages/",
+        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bart/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+        "projectName": "TrafficMenagement",
+        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+        "packagesPath": "/Users/bart/.nuget/packages/",
+        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bart/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/Transport.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/Transport.csproj",
+        "projectName": "Transport",
+        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/Transport.csproj",
+        "packagesPath": "/Users/bart/.nuget/packages/",
+        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bart/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/Animation.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/Animation.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj"
+              },
+              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj": {
+                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "City/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/City.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/City.dll": {}
+        }
+      },
+      "FastProfile/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "City": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FastProfile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FastProfile.dll": {}
+        }
+      },
+      "RouteSearch/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "City": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RouteSearch.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RouteSearch.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "City/1.0.0": {
+      "type": "project",
+      "path": "../City/City.csproj",
+      "msbuildProject": "../City/City.csproj"
+    },
+    "FastProfile/1.0.0": {
+      "type": "project",
+      "path": "../FastProfile/FastProfile.csproj",
+      "msbuildProject": "../FastProfile/FastProfile.csproj"
+    },
+    "RouteSearch/1.0.0": {
+      "type": "project",
+      "path": "../RouteSearch/RouteSearch.csproj",
+      "msbuildProject": "../RouteSearch/RouteSearch.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "City >= 1.0.0",
+      "FastProfile >= 1.0.0",
+      "RouteSearch >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/bart/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+      "projectName": "TrafficMenagement",
+      "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+      "packagesPath": "/Users/bart/.nuget/packages/",
+      "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/bart/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+            },
+            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
+              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj"
+            },
+            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
+              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
