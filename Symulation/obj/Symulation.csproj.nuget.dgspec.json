@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj": {}
+    "/Users/bart/python/repository/SymTrans/Symulation/Symulation.csproj": {}
   },
   "projects": {
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+    "/Users/bart/python/repository/SymTrans/City/City.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj",
+        "projectUniqueName": "/Users/bart/python/repository/SymTrans/City/City.csproj",
         "projectName": "City",
-        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj",
+        "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj",
         "packagesPath": "/Users/bart/.nuget/packages/",
-        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/obj/",
+        "outputPath": "/Users/bart/python/repository/SymTrans/City/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bart/.nuget/NuGet/NuGet.Config"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
+    "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj",
+        "projectUniqueName": "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj",
         "projectName": "FastProfile",
-        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj",
+        "projectPath": "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj",
         "packagesPath": "/Users/bart/.nuget/packages/",
-        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/obj/",
+        "outputPath": "/Users/bart/python/repository/SymTrans/FastProfile/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bart/.nuget/NuGet/NuGet.Config"
@@ -78,8 +78,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              "/Users/bart/python/repository/SymTrans/City/City.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj"
               }
             }
           }
@@ -112,14 +112,14 @@
         }
       }
     },
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
+    "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj",
+        "projectUniqueName": "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj",
         "projectName": "RouteSearch",
-        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj",
+        "projectPath": "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj",
         "packagesPath": "/Users/bart/.nuget/packages/",
-        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/obj/",
+        "outputPath": "/Users/bart/python/repository/SymTrans/RouteSearch/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bart/.nuget/NuGet/NuGet.Config"
@@ -134,8 +134,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              "/Users/bart/python/repository/SymTrans/City/City.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj"
               }
             }
           }
@@ -168,14 +168,14 @@
         }
       }
     },
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj": {
+    "/Users/bart/python/repository/SymTrans/Symulation/Symulation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj",
+        "projectUniqueName": "/Users/bart/python/repository/SymTrans/Symulation/Symulation.csproj",
         "projectName": "Symulation",
-        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj",
+        "projectPath": "/Users/bart/python/repository/SymTrans/Symulation/Symulation.csproj",
         "packagesPath": "/Users/bart/.nuget/packages/",
-        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/obj/",
+        "outputPath": "/Users/bart/python/repository/SymTrans/Symulation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bart/.nuget/NuGet/NuGet.Config"
@@ -190,14 +190,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              "/Users/bart/python/repository/SymTrans/City/City.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj"
               },
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj"
+              "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj"
               },
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj"
+              "/Users/bart/python/repository/SymTrans/TrafficMenagement/TrafficMenagement.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/TrafficMenagement/TrafficMenagement.csproj"
               }
             }
           }
@@ -230,14 +230,14 @@
         }
       }
     },
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj": {
+    "/Users/bart/python/repository/SymTrans/TrafficMenagement/TrafficMenagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+        "projectUniqueName": "/Users/bart/python/repository/SymTrans/TrafficMenagement/TrafficMenagement.csproj",
         "projectName": "TrafficMenagement",
-        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+        "projectPath": "/Users/bart/python/repository/SymTrans/TrafficMenagement/TrafficMenagement.csproj",
         "packagesPath": "/Users/bart/.nuget/packages/",
-        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/obj/",
+        "outputPath": "/Users/bart/python/repository/SymTrans/TrafficMenagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bart/.nuget/NuGet/NuGet.Config"
@@ -252,14 +252,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+              "/Users/bart/python/repository/SymTrans/City/City.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj"
               },
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj"
+              "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj"
               },
-              "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
-                "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj"
+              "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj": {
+                "projectPath": "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj"
               }
             }
           }

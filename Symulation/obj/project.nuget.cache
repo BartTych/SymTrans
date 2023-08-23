@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8mSc9K2fyy4hLOYiXeVRBibOrtzTeInLCKYaYx/e2Z9FLlxg0sNkpwFTa8nPfjHeo270c9HGUg59qtg24qdTwg==",
+  "dgSpecHash": "cThOmoWpREURZGhYQRP5bjDAoMWQVqaH1QdpDs+Ii8lFFMpcIeqx9oOIPt3/V+5Hd/qOOlfL35hisSlCZN9YmQ==",
   "success": true,
-  "projectFilePath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj",
+  "projectFilePath": "/Users/bart/python/repository/SymTrans/Symulation/Symulation.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

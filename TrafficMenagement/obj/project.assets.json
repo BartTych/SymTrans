@@ -70,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+      "projectUniqueName": "/Users/bart/python/repository/SymTrans/TrafficMenagement/TrafficMenagement.csproj",
       "projectName": "TrafficMenagement",
-      "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/TrafficMenagement.csproj",
+      "projectPath": "/Users/bart/python/repository/SymTrans/TrafficMenagement/TrafficMenagement.csproj",
       "packagesPath": "/Users/bart/.nuget/packages/",
-      "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/TrafficMenagement/obj/",
+      "outputPath": "/Users/bart/python/repository/SymTrans/TrafficMenagement/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bart/.nuget/NuGet/NuGet.Config"
@@ -89,14 +89,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
-              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+            "/Users/bart/python/repository/SymTrans/City/City.csproj": {
+              "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj"
             },
-            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
-              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj"
+            "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj": {
+              "projectPath": "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj"
             },
-            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj": {
-              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/RouteSearch/RouteSearch.csproj"
+            "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj": {
+              "projectPath": "/Users/bart/python/repository/SymTrans/RouteSearch/RouteSearch.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yp7aeH1z+KAw8wvHCwo811vL78zJVntshXXXWHVCzfOLCk/JWMN5p2sqBr9vZjHPawheQiUh4lguabCRFXAyCg==",
+  "dgSpecHash": "g1Dj2Daq5a7NS2LWuCQLNz1rRkWZWliI4rRilB1mfodFFx3VWtkna89IevODCzj5qHyU++JzV35B/nxuAewybA==",
   "success": true,
-  "projectFilePath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj",
+  "projectFilePath": "/Users/bart/python/repository/SymTrans/City/City.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NOsE3BwaGiU1ukIqVrUqwIF4aUmUyUdLxk8REBBX8q/E1B6kHQ+GVnSvazkEZKW/jubPKDffJcFVmt53COyn6g==",
+  "dgSpecHash": "+pnilnDXVACkjN0qXAK8HxhrhJIYXmPj2YRvO5CJbDybVnk+pF7N6K6sO0adkVy7uc/DxJiT6jCqE6SzzfKDdQ==",
   "success": true,
-  "projectFilePath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj",
+  "projectFilePath": "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

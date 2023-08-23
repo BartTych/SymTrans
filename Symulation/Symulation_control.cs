@@ -90,7 +90,8 @@ namespace Symulation
                 // narzie dzieje sie to kompletnie przypadkowo 
                 ride_request_list = ride_request.ride_request_cycle(time);
                 
-                
+                // w tym cyklu bedzie zapytanie o nowy przejezd 
+                // na podstawie losawania w poprzednim kroku
                 if(ride_request_list.Count != 0)
                 {
                     //Console.WriteLine("ride request: start {0}, finish {1}", ride_request_list[0].Start_station_number, ride_request_list[0].End_station_number);
@@ -99,7 +100,9 @@ namespace Symulation
                     // ale tez kapsuly do tego przejazdu, miejsca w stacji startowej, miejsca w stacji koncowej, itd.
                     // narazie jest uproszczona
                     // to raczej powinny byc dodatkowe metody ktore razem twoza jedna calosc coraz bardziej rozbudowana
-                    // ta metoda jest zupelnie ok , inne funkcjonalnosci powinny obslugiwac reszte np czy kapsuly sa dostepne 
+                    // ta metoda jest zupelnie ok , inne funkcjonalnosci powinny obslugiwac reszte np czy kapsuly sa dostepne
+
+
                     var (search_effect, was_search_succesfull) = ride_search(ride_request_list[0], finish_time);
 
 
@@ -143,17 +146,21 @@ namespace Symulation
             int end_station = request.End_station_number;
             double request_time = request.request_time;
 
+            // ok to jest sama droga pomiedzy wezlami
+            // on zawiera tylko numery wezlow po drodze i numery trackow 
             int[][][] routes = search.SeekRouteBetweenStations(start_station, end_station);
             var route = routes[0];
             List<ride_search_thread> threads_list = new List<ride_search_thread>();
             
 
-            // tworze (jesli zrobie tabele to bedzie tylko wczytywanie) liste sekcji i permutacji ktore bede mijac po drodze
+            // tworze (jesli zrobie tabele to bedzie tylko wczytywanie)
+            // liste sekcji i permutacji ktore bede mijac po drodze
             var (list_of_sections, list_of_permutations) = route_detail.prepare_description_of_route(route);
 
-            //twoze liste trawersow dla pierwszej permutacji 
-            create_ride_search_threads(request_time, list_of_permutations[0], route, 2); //liczba oznacza liczbe traversow, wiec tak naprawde moze byc wiecej okien 
-
+            // twoze liste trawersow
+            // czyli jest tak ze search odbywa sie w przestrzeni okien itp pomiedzy roznymi sekcjami
+            // liczba oznacza liczbe traversow, wiec tak naprawde moze byc wiecej okien 
+            create_ride_search_threads(request_time, list_of_permutations[0], route, 2); 
             // algorytm szukania przejazdu
             int licznik = 0;
             while (threads_list.Count > 0)
@@ -171,7 +178,6 @@ namespace Symulation
                     //licznik++;
                     //break;
                 }
-
             }
             return (new ride_search_thread(), false);
 

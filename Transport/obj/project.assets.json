@@ -131,11 +131,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/Transport.csproj",
+      "projectUniqueName": "/Users/bart/python/repository/SymTrans/Transport/Transport.csproj",
       "projectName": "Transport",
-      "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/Transport.csproj",
+      "projectPath": "/Users/bart/python/repository/SymTrans/Transport/Transport.csproj",
       "packagesPath": "/Users/bart/.nuget/packages/",
-      "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/obj/",
+      "outputPath": "/Users/bart/python/repository/SymTrans/Transport/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bart/.nuget/NuGet/NuGet.Config"
@@ -150,17 +150,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/Animation.csproj": {
-              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Animation/Animation.csproj"
+            "/Users/bart/python/repository/SymTrans/Animation/Animation.csproj": {
+              "projectPath": "/Users/bart/python/repository/SymTrans/Animation/Animation.csproj"
             },
-            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
-              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj"
+            "/Users/bart/python/repository/SymTrans/City/City.csproj": {
+              "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj"
             },
-            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj": {
-              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/FastProfile/FastProfile.csproj"
+            "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj": {
+              "projectPath": "/Users/bart/python/repository/SymTrans/FastProfile/FastProfile.csproj"
             },
-            "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj": {
-              "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Symulation/Symulation.csproj"
+            "/Users/bart/python/repository/SymTrans/Symulation/Symulation.csproj": {
+              "projectPath": "/Users/bart/python/repository/SymTrans/Symulation/Symulation.csproj"
             }
           }
         }

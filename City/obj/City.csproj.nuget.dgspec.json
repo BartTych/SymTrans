@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {}
+    "/Users/bart/python/repository/SymTrans/City/City.csproj": {}
   },
   "projects": {
-    "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj": {
+    "/Users/bart/python/repository/SymTrans/City/City.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj",
+        "projectUniqueName": "/Users/bart/python/repository/SymTrans/City/City.csproj",
         "projectName": "City",
-        "projectPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/City.csproj",
+        "projectPath": "/Users/bart/python/repository/SymTrans/City/City.csproj",
         "packagesPath": "/Users/bart/.nuget/packages/",
-        "outputPath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/City/obj/",
+        "outputPath": "/Users/bart/python/repository/SymTrans/City/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bart/.nuget/NuGet/NuGet.Config"

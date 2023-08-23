@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NWCbDc2u69HC2oPvJLHrRZEYKtzpy+gfnSDhjQxYnb2/xZPrHU+ofQ93p3+cCwc87BU1+D8KsTID6rwXwAIkrQ==",
+  "dgSpecHash": "wxh1wHdGfMSJYtgZNKfbEfFS0mp5I8Wlo+vxojnEoSrtk7hJmXWouFSRAZo//fcR71xgaLweBL6d24lsLdNR6Q==",
   "success": true,
-  "projectFilePath": "/Users/bart/Visual_studio_code_projects/Obliczenia_transport/Transport/Transport.csproj",
+  "projectFilePath": "/Users/bart/python/repository/SymTrans/Transport/Transport.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
