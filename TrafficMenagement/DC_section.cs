@@ -73,6 +73,12 @@ namespace Symulation
             section_config = new Section_config_DC(cityData, list_of_I_nodes, list_of_O_nodes, _list_of_permutations,_list_of_priority_permutations,_list_of_start_permutations,_list_of_end_permutations, _list_of_tracks_in_section , DC_length);
             //Console.WriteLine("  ");
             //Console.WriteLine("Section number: {0}", _number_Of_Section);
+
+            // tutaj dzieje sie magia skladania razem roznych permutacji, przejazdu. 
+            // teraz np jest tak ze jak robie skladanie to no koniec jedna z permutacji ktora nazywam priorytetowa wydluzam 
+            // o tyle ile sie da ta priorytetowa permutacje
+            // to jest zalazek tego co chcialbym zrobic docelowo 
+            // czyli rozne sposoby optymalizacji zamiast tego skupiarnia sie na realnosci symulacji i przyspieszania
             section_config.calculate_config(_list_of_permutations, true ,number_of_section);
             //perform_check_for_all_posible_combinations(matrix_of_permutations, _list_of_permutations,CityMap, _list_of_I_nodes, _list_of_O_nodes);
         }

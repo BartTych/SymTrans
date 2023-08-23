@@ -43,6 +43,7 @@ namespace Symulation
             this.shift = shift;
         }
 
+        // tu jest wyzwanie takie ze niewiem gdzie jest liczony config calosci
         /// <summary>
         /// Currently I turned of branching of search threads. Because the is a problem with deep copy method during that process.
         /// Turning it on, to see if it works.
@@ -77,6 +78,7 @@ namespace Symulation
                 // check and add interactions (missing deactivation of some of sort section exit windows)
                 // there is stored time of end of last calculation if exceded, calculate more
                 // currently simplified version, which works only once go requested period of time
+                //tu generuje wszystkie requesty 
                 if (sym_data.is_generation_of_new_interations_necessary(time))
                 {
                     //generating interactions

@@ -428,6 +428,28 @@ namespace Symulation
             //metoda wrzucajaca wszystko w macierz wynikowa
             return result;
         }
+
+        public List<double[]> Route_Base_MatrixBetweenStations_velocity_only(int[][] Route, double a)
+        {
+            //przygotowanie listy zmian predkosci na drodze ktora bedzie jechac kapsula (int[][] Route)
+            var Steps = List_Of_Route_Steps_BetweenStations(Route);
+
+            var result = new List<double[]>();
+            //int current_route_node;
+
+            // X0 odleglosc harakterystyczna1 poczatek
+            // X1 odleglosc charakterystyczna2 koniec,
+            // V predkosc na poczatku, przyspieszenie na poczatku,
+            // rodzaj lini (-1 brake, 0 track, 1 accelerate)
+            // node 1(poczatek dla a i t)
+            // node 2 koniec dla T i B
+            // na poczatku a ma tylko 1 X, b ma tylko 2 X, T obie. po przecieciach A i B tez maja obie.
+
+
+            //wstawienie wszystkich trackow ktore sa obecne w spisie drogi 
+            result = Add_All_Tracks_To_Result(result);
+            return result;
+        }
         public List<double[]> Route_Base_MatrixBetweenNoudes(int[][] Route, double a)
         {
             //przygotowanie listy zmian predkosci na drodze ktora bedzie jechac kapsula (int[][] Route)

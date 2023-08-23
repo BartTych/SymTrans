@@ -229,7 +229,8 @@ namespace Symulation
             //ide po wszystkich modulach mapy
             //wyciagam najpierw I node list , O node list i liste priority
             //potem twoze i dodaje sekcje
-
+            // tutaj definiujac sekcje dla kazdej z nich licze config 
+            // czyli robie tak ze dopasowuje do siebie kazdy z mozliwych kierunkow przejazdu. 
             for(int i = 0; i < list_of_map_modules.Count; i++)
             {
                 if(list_of_map_modules[i].type_of_section == type_of_section.DC)

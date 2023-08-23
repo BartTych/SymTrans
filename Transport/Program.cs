@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,12 +25,23 @@ namespace Symulation
                 //calculate position of nodes 
                 CityMap.CalculatePositionOfNodes(true);
 
-            for (double i = 30; i < 45; i++)//sort length
-            {
-                for (double j = 10; j < 14; j++)// DC length
-                {
+            
+                var routeSearch = new SearchForRoutesMain(CityMap);
 
                 
+
+                var route = routeSearch.SeekRouteBetweenStations (1, 2);
+                var profileGenerator = new FastestProfile(route[0],CityMap);
+                
+                profileGenerator.ProfileBetweenStations(0.5);
+                
+                System.Console.WriteLine("test");
+            
+            /*
+            for (double i = 30; i < 45; i++)   //sort length
+            {
+                for (double j = 10; j < 14; j++)   // DC length
+                {
                 
                 var symulation = new Symulation_control(CityMap,list_of_modules, i, 0, j);// w tej mapie sort powinien miec max 28 m inaczej cos jest nietak z mapa
                 
@@ -68,10 +80,11 @@ namespace Symulation
                 }
 
             }
+            */
 
             Console.WriteLine("ready");
             Console.WriteLine("radosc :)");
-        
+            
         }
 
         

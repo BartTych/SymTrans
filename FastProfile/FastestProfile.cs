@@ -19,10 +19,18 @@ namespace Symulation
         }
 
 
-        public List<double[]> ProfileBetweenStations(double a)
+        public void ProfileBetweenStations(double a)
         {
             var base_mtrix = new RouteQueries(_Route, _City);                               //tworze objekt RouteQueries na bazie drogi(_Route) i miasta (_City)
-            var base_profile = base_mtrix.Route_Base_MatrixBetweenStations(_Route, a);       //tworze macierz i opisem jak bedzie biegla droga od skrzyzowania gdzie predkosc definiuje wolniejsze ramie do konca
+            
+            // ok jesli chce przejsc na system gdzie niema przyspierszen
+            // tylko jest okreslona predkosc to juz base profile bedzie inny
+            // bo niebedzie zawierac tylko spis trackow z predkosciami  
+            // to juz jest wlasciwie gotowy profil 
+            // jedyne co moge zerobic to uproscic to co ma taka sama predkosc
+            // narazie oznacza to ze bedzie tylko jedna sekcje tutaj ze stalo predkoscia
+            
+            var base_profile = base_mtrix.Route_Base_MatrixBetweenStations_velocity_only(_Route, a);       //tworze macierz i opisem jak bedzie biegla droga od skrzyzowania gdzie predkosc definiuje wolniejsze ramie do konca
 
             Console.WriteLine("base_matrix:  ");
             for (int i = 0; i < base_profile.Count; i++)
@@ -35,8 +43,11 @@ namespace Symulation
                 Console.Write(base_profile[i][5].ToString("N0") + "\t");
                 Console.WriteLine(base_profile[i][6].ToString("N0") + "\t");
             }
-
+            
             var (_profile, KodBledu) = Create_Profile(base_profile);                         //tworze profil
+            
+
+
             Console.WriteLine("wynik tworzenia profilu");
             for (int i = 0; i < _profile.Count; i++)
             {
@@ -58,8 +69,8 @@ namespace Symulation
             test = check_profile_times(_profile);
             Console.Write("wynik sprawdzenia czasu   ");
             Console.WriteLine(test);
-
-            return _profile;
+            
+            //return new List<double[]> test;
         }
 
         //tu mam metode profile between intersection ale ona raczej sie nieprzyda bo jest zbyt primitywna
@@ -157,7 +168,26 @@ namespace Symulation
 
             return (-10, _profile); //error in error generation process
         }
+        /// <summary>
+        /// Simplification of route, where sections with same speed are merged
+        /// </summary>
+        /// <param name="Base"></param>
+        /// <returns></returns>
+        public (List<double[]>, int KodBledu) Create_Profile_velocity_only(List<double[]> Base)
+        {
+                // ide po colosci i merguje zekcje jesli jest taka sama predkosc 
+                // pytanie czy to mergowanie jest do czegos wogule potrzebne ?
+                // napewno to ulatwia czytanie ale czy cos pozatym ?
+                // maze tak naprawde to pozniej tylko komplikuje i musze to spowrotem rozkladac 
+                // wiec tak naprawde to narazie to zostawie bez mergowanie dla uproszczenia 
 
+                // licze czasy po jakim znajdzie sie dana kapsola na paczatku i koncu danego odcinka
+                // zostalo tylko to do zrobienia
+
+                Base = Time_Calculation_For_Base(Base);
+                return (Base, 0);
+
+        }
 
         public (List<double[]> profile,int KodBledu ) Create_Profile(List<double[]> Base)
         {

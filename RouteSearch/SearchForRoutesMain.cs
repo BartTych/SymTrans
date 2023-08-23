@@ -27,8 +27,8 @@ namespace Symulation
             CreateDificultyMap = new CreatingRouteDificultyMap(mapOfCity);
 
             MatrixOfDifficultyForNodesToFinishStation = new double[CityMap.NumberOfNodes()][];
-            FinalRoutes = new int[1000][][];//, 3,200];
-            for (int i = 0; i < 1000; i++)
+            FinalRoutes = new int[1][][];//, 3,200];
+            for (int i = 0; i < 1; i++)
             {
                 FinalRoutes[i] = new int[3][];
                 for (int j = 0; j < 3; j++)
