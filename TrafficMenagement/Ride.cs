@@ -377,7 +377,7 @@ namespace Symulation
             var profile_calculator = new FastestProfile(ModifiedRoute, ModifiedCity);
 
             
-            var(error_code, profile) = profile_calculator.ProfileBetweenNodes(3);
+            var(error_code, profile) = profile_calculator.ProfileBetweenNodes();
 
             ride_profile = profile;
 

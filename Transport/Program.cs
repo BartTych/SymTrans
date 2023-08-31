@@ -26,15 +26,18 @@ namespace Symulation
                 CityMap.CalculatePositionOfNodes(true);
 
             
-                var routeSearch = new SearchForRoutesMain(CityMap);
 
-                
+            
+                var routeSearch = new SearchForRoutesMain(CityMap);
 
                 var route = routeSearch.SeekRouteBetweenStations (1, 2);
                 var profileGenerator = new FastestProfile(route[0],CityMap);
                 
                 profileGenerator.ProfileBetweenStations(0.5);
                 
+                var sym_centrol = new Symulation_control(CityMap, list_of_modules, 15, 0, 7);
+
+
                 System.Console.WriteLine("test");
             
             /*

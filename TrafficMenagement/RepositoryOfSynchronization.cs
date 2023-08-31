@@ -98,7 +98,7 @@ namespace Symulation
                                 var route = routes[0];
 
                                 var profile_calculator = new FastestProfile(route, city);
-                                var (error_code, profile) = profile_calculator.ProfileBetweenNodes(3);//number is acceleration of pod
+                                var (error_code, profile) = profile_calculator.ProfileBetweenNodes();//number is acceleration of pod
 
 
 
@@ -149,7 +149,7 @@ namespace Symulation
                                 var route = routes[0];
 
                                 var profile_calculator = new FastestProfile(route, city);
-                                var (error_code, profile) = profile_calculator.ProfileBetweenNodes(3);//number is acceleration of pod
+                                var (error_code, profile) = profile_calculator.ProfileBetweenNodes();//number is acceleration of pod
 
 
 

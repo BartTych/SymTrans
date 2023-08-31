@@ -111,7 +111,9 @@ namespace Symulation
             }
 
         }
-        public (int NewnodeNumber, int last_track_affected_by_mod , bool is_new_track_added) AddNewNodeToTrackTheWrongWay(int AffectedTrack, double DistanceIntoAffectedTrack)
+
+        
+        public (int NewnodeNumber, int NewTrackNumber , bool is_new_track_added) AddNewNodeToTrackTheWrongWay(int AffectedTrack, double DistanceIntoAffectedTrack)
         {
             //reorganise city
             //

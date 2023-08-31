@@ -275,7 +275,7 @@ namespace Symulation
             else
             {
                 //jesli niema takiego miejsca
-                //wprowadzam mod ostatniego tracku, nowy modue itd
+                //wprowadzam mod ostatniego tracku, nowy node itd
                 var (new_node, new_track, is_new_track_created) = AddNewNodeToTrackTheWrongWay(last_affected_track, distance_into_last_affected_track);
                 // w opisie modu dodane do trawersu:
                 //metoda replace last track
@@ -524,7 +524,88 @@ namespace Symulation
         }
     }
 
-    
+    public class AddNewNodeAtDistanceTheWrongWay: ModOfCityMap
+    {
+        private CityDataStorage city;
+
+        public AddNewNodeAtDistanceTheWrongWay(CityDataStorage city):base (city)
+            {
+            this.city = city;
+        }
+
+        public int apply_mod(ref int [][] route, int start_node, double distance) //route //start_node //distance
+        {
+            // modyfikuje city
+            var mod = new ModOfCityMap(city);
+            // dodaje nowy node przed miejscem przejazdu na kopi
+            int track = find_track_number_connected_to_node_the_wrong_way(route, start_node);
+            //var (affected_tracks, distance_into_last_affected_track, error_code) = SearchForLocationOfOthereSideOfMod_WrongWay(track, distance);
+
+            // tu jest blad bo uzylem mega nisko poziomowej rzeczy 
+            // i to wprowadza spagetti chaos
+            // to co zrobie to dodom nowy rodzaj modyfikacji
+            // na poziomie ktory jest do tego odpowiedni 
+            
+            (var affected_tracks, var distance_into_track, var error) = SearchForLocationOfOthereSideOfMod_WrongWay(track, distance);
+            var last_affected_track = affected_tracks.Last();
+            (int end_node, var new_track, var is_new_track_added) = mod.AddNewNodeToTrackTheWrongWay(last_affected_track, distance_into_track);
+            
+            if( !is_new_track_added)
+                return end_node;
+            else
+            {
+                route = mod_of_route(route, end_node,new_track, last_affected_track);
+                return end_node;
+            }
+        }
+         private int[][] mod_of_route(int[][] route, int new_node, int new_track, int last_affected_track)
+        {
+            var index = find_index_of_affected_track_in_route(route, last_affected_track);
+            var start_node_of_affected_track = route[index][0];
+            var finish_node_of_affected_track = route[index][1];
+
+            var fist_new_step = new int[3] { start_node_of_affected_track, new_node, new_track };
+            var second_new_step = new int[3] { new_node, finish_node_of_affected_track, last_affected_track };
+
+            var new_route = create_new_route(route, index, fist_new_step, second_new_step);
+            return new_route;
+        }
+
+        private int[][] create_new_route(int[][] route, int index, int[] first_new_step, int[] second_new_step)
+        {
+            var new_route = new int[route.Length + 1][];
+
+            for (int i = 0; i < index; i++)
+            {
+                new_route[i] = (int[])route[i].Clone();
+            }
+
+            new_route[index] = first_new_step;
+            new_route[index + 1] = second_new_step;
+
+            for (int i = index + 1; i < route.Length; i++)
+            {
+                new_route[i + 1] = (int[])route[i].Clone();
+            }
+            return new_route;
+        }
+
+          private int find_index_of_affected_track_in_route(int[][] route, int affected_track)
+        {
+            var index = -1;
+            for (int i = 0; i < route.GetLength(0); i++)
+            {
+                if (route[i][2] == affected_track)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+
+       
+    }
 
     //public class Move_point_at_station: BasicModOfProfile
     //{

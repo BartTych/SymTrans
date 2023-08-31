@@ -450,6 +450,71 @@ namespace Symulation
             result = Add_All_Tracks_To_Result(result);
             return result;
         }
+
+        public List<double[]> Route_Base_MatrixBetweenNoudes_velocity_only(int[][] Route)
+        {
+            //przygotowanie listy zmian predkosci na drodze ktora bedzie jechac kapsula (int[][] Route)
+            var Steps = List_Of_Route_Steps_BetweenNodes(Route);
+
+            var result = new List<double[]>();
+            int current_route_node;
+
+            // X0 odleglosc harakterystyczna1 poczatek
+            // X1 odleglosc charakterystyczna2 koniec,
+            // V predkosc na poczatku, przyspieszenie na poczatku,
+            // rodzaj lini (-1 brake, 0 track, 1 accelerate)
+            // node 1(poczatek dla a i t)
+            // node 2 koniec dla T i B
+            // a ma tylko X0, b ma tylko X1, T obiei po przecieciach z A i B tez maja obie, bez zmian
+
+
+            //wstawienie wszystkich trackow ktore sa obecne w spisie drogi 
+            result = Add_All_Tracks_To_Result(result);
+
+            //laczenie trackow o identycznych predkosciach, teraz kiedy chce dodac modyfikacje profilu moze lepiej tego nierobic ?
+            //kedy metoda jest wylaczona, profil zawiera poprostu spis wszystkich odcinkow drogi, a nie tylko logiczne sekcje
+            //result = Consolidate_Track_with_The_same_speed(result);
+
+            //dodanie skokow z listy steps
+            /*
+            for (int i = 0; i < Steps.Length; i++)
+            {
+                //type of step
+                if (Steps[i][3] == 1)//acceleration
+                {
+                    //search for track that starts at step node
+                    var Index_of_A = Search_For_Track_Which_starts_with_Node(result, (int)Steps[i][0]);
+                    //add acceleration before that node 
+                    result.Insert(Index_of_A, new double[9]);
+                    result[Index_of_A][0] = Steps[i][1];
+                    result[Index_of_A][1] = 0;
+                    result[Index_of_A][2] = Steps[i][2];    //predkoscod od ktorejprzspiesza dana sekcja akcelerate
+                    result[Index_of_A][3] = a;//acceleration
+                    result[Index_of_A][4] = 1;//type of line
+                    result[Index_of_A][5] = Steps[i][0];//node 1
+                    result[Index_of_A][6] = -2;//node 2
+                }
+                else// brake
+                {
+                    //search for track that ends at step node
+                    var Index_of_B = Search_For_Track_Which_ends_with_Node(result, (int)Steps[i][0]);
+                    //add brake after that node
+                    result.Insert(Index_of_B + 1, new double[9]);
+                    result[Index_of_B + 1][0] = 0;
+                    result[Index_of_B + 1][1] = Steps[i][1];
+                    result[Index_of_B + 1][2] = Steps[i][2];    //predkosc do ktorej hamuje dana sekcja brake
+                    result[Index_of_B + 1][3] = a;//acceleration
+                    result[Index_of_B + 1][4] = -1;//type of line
+                    result[Index_of_B + 1][5] = -2;//node 1
+                    result[Index_of_B + 1][6] = Steps[i][0];//node 2
+                }
+            }
+            */
+            //metoda wrzucajaca wszystko w macierz wynikowa
+            
+            return result;
+        }
+
         public List<double[]> Route_Base_MatrixBetweenNoudes(int[][] Route, double a)
         {
             //przygotowanie listy zmian predkosci na drodze ktora bedzie jechac kapsula (int[][] Route)

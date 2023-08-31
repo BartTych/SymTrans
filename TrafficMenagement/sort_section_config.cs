@@ -663,9 +663,9 @@ namespace Symulation
                     traverse_last_pod_mod.add_mod_of_last_pod_in_a_traverse(length, ref last_pod_route);
 
                     var First_permutation_profile_generator = new FastestProfile(first_pod_route, first_pod_city_copy);
-                    var (error1, first_pod_profile) = First_permutation_profile_generator.ProfileBetweenNodes(3);
+                    var (error1, first_pod_profile) = First_permutation_profile_generator.ProfileBetweenNodes();
                     var Last_permutation_profile_generator = new FastestProfile(last_pod_route, last_pod_city_copy);
-                    var (error2, last_pod_profile) = Last_permutation_profile_generator.ProfileBetweenNodes(3);
+                    var (error2, last_pod_profile) = Last_permutation_profile_generator.ProfileBetweenNodes();
 
                     var list_of_schematic_components = permutations[i].get_list_of_schematic_components();
 
@@ -843,9 +843,9 @@ namespace Symulation
 
 
                 var First_permutation_profile_generator = new FastestProfile(first_route, first_city_copy);
-                var (error1, first_profile) = First_permutation_profile_generator.ProfileBetweenNodes(3);
+                var (error1, first_profile) = First_permutation_profile_generator.ProfileBetweenNodes();
                 var Second_permutation_profile_generator = new FastestProfile(second_route, second_city_copy);
-                var (error2, second_profile) = Second_permutation_profile_generator.ProfileBetweenNodes(3);
+                var (error2, second_profile) = Second_permutation_profile_generator.ProfileBetweenNodes();
 
                 double first_speed;
                 double second_speed;
@@ -1049,9 +1049,9 @@ namespace Symulation
 
 
                 var First_permutation_profile_generator = new FastestProfile(first_route, first_city_copy);
-                var (error1, first_profile) = First_permutation_profile_generator.ProfileBetweenNodes(3);
+                var (error1, first_profile) = First_permutation_profile_generator.ProfileBetweenNodes();
                 var Second_permutation_profile_generator = new FastestProfile(second_route, second_city_copy);
-                var (error2, second_profile) = Second_permutation_profile_generator.ProfileBetweenNodes(3);
+                var (error2, second_profile) = Second_permutation_profile_generator.ProfileBetweenNodes();
 
                 double length_of_route_first_traverse = first_profile[first_profile.Count - 1][1];
 
@@ -1125,9 +1125,9 @@ namespace Symulation
 
 
                 var First_permutation_profile_generator = new FastestProfile(first_route, first_city_copy);
-                var (error1, first_profile) = First_permutation_profile_generator.ProfileBetweenNodes(3);
+                var (error1, first_profile) = First_permutation_profile_generator.ProfileBetweenNodes();
                 var Second_permutation_profile_generator = new FastestProfile(second_route, second_city_copy);
-                var (error2, second_profile) = Second_permutation_profile_generator.ProfileBetweenNodes(3);
+                var (error2, second_profile) = Second_permutation_profile_generator.ProfileBetweenNodes();
 
                 double length_of_route_first_traverse = first_profile[first_profile.Count - 1][1];
 

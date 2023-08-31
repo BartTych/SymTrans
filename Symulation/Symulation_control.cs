@@ -34,13 +34,13 @@ namespace Symulation
            // (RepositoryOfSections, list_of_permutations, repository_of_synchronization) = libray_of_sections.sekcje_rozgalezienie_DC(sort_traverse_length, shift);
             (RepositoryOfSections, list_of_permutations, repository_of_synchronization) = libray_of_sections.Translate_city_modules_to_sections(list_of_modules, sort_traverse_length,DC_length);
 
-            menagment_of_interactions = new managment_of_traverse_interactions(RepositoryOfSections, list_of_permutations, city);
+            //menagment_of_interactions = new managment_of_traverse_interactions(RepositoryOfSections, list_of_permutations, city);
 
-            search = new SearchForRoutesMain(city);
-            route_detail = new DetailsOfRoute(city, RepositoryOfSections);
-            this.sort_traverse_length = sort_traverse_length;
-            this.DC_length = DC_length;
-            this.shift = shift;
+            //search = new SearchForRoutesMain(city);
+            //route_detail = new DetailsOfRoute(city, RepositoryOfSections);
+            //this.sort_traverse_length = sort_traverse_length;
+            //this.DC_length = DC_length;
+            //this.shift = shift;
         }
 
         // tu jest wyzwanie takie ze niewiem gdzie jest liczony config calosci

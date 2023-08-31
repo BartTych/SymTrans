@@ -44,7 +44,7 @@ namespace Symulation
                 Console.WriteLine(base_profile[i][6].ToString("N0") + "\t");
             }
             
-            var (_profile, KodBledu) = Create_Profile(base_profile);                         //tworze profil
+            var (_profile, KodBledu) = Create_Profile_velocity_only(base_profile);                         //tworze profil
             
 
 
@@ -121,23 +121,25 @@ namespace Symulation
 
         //    return (-10, _profile); //error in error generation process
         //}
-        public (int error_code, List<double[]> profile) ProfileBetweenNodes(double a)
+
+
+        public (int error_code, List<double[]> profile) ProfileBetweenNodes()
         {
             var base_mtrix = new RouteQueries(_Route, _City);                 //tworze objekt RouteQueries na bazie drogi(_Route) i miasta (_City)
-            var base_profile = base_mtrix.Route_Base_MatrixBetweenNoudes(_Route, a);       //tworze macierz i opisem jak bedzie biegla droga
+            var base_profile = base_mtrix.Route_Base_MatrixBetweenNoudes_velocity_only(_Route);       //tworze macierz i opisem jak bedzie biegla droga
             //Console.WriteLine("base_matrix:  ");
             for (int i = 0; i < base_profile.Count; i++)
             {
-                //Console.Write(base_profile[i][0].ToString("N1") + "\t");
-                //Console.Write(base_profile[i][1].ToString("N1") + "\t");
-                //Console.Write(base_profile[i][2].ToString("N1") + "\t");
-                //Console.Write(base_profile[i][3].ToString("N1") + "\t");
-                //Console.Write(base_profile[i][4].ToString("N0") + "\t");
-                //Console.Write(base_profile[i][5].ToString("N0") + "\t");
-                //Console.WriteLine(base_profile[i][6].ToString("N0") + "\t");
+                Console.Write(base_profile[i][0].ToString("N1") + "\t");
+                Console.Write(base_profile[i][1].ToString("N1") + "\t");
+                Console.Write(base_profile[i][2].ToString("N1") + "\t");
+                Console.Write(base_profile[i][3].ToString("N1") + "\t");
+                Console.Write(base_profile[i][4].ToString("N0") + "\t");
+                Console.Write(base_profile[i][5].ToString("N0") + "\t");
+                Console.WriteLine(base_profile[i][6].ToString("N0") + "\t");
             }
 
-            var (_profile, KodBledu) = Create_Profile(base_profile);                         //tworze profil
+            var (_profile, KodBledu) = Create_Profile_velocity_only(base_profile);                         //tworze profil
             //Console.WriteLine("wynik tworzenia profilu");
 
             switch (KodBledu)
@@ -145,15 +147,15 @@ namespace Symulation
                 case 0:
                     for (int i = 0; i < _profile.Count; i++)
                     {
-                        //Console.Write(_profile[i][0].ToString("N1") + "\t");
-                        //Console.Write(_profile[i][1].ToString("N1") + "\t");
-                        //Console.Write(_profile[i][2].ToString("N1") + "\t");
-                        //Console.Write(_profile[i][3].ToString("N1") + "\t");
-                        //Console.Write(_profile[i][4].ToString("N0") + "\t");
-                        //Console.Write(_profile[i][5].ToString("N0") + "\t");
-                        //Console.Write(_profile[i][6].ToString("N0") + "\t");
-                        //Console.Write(_profile[i][7].ToString("N2") + "\t");
-                        //Console.WriteLine(_profile[i][8].ToString("N2") + "\t");
+                        Console.Write(_profile[i][0].ToString("N1") + "\t");
+                        Console.Write(_profile[i][1].ToString("N1") + "\t");
+                        Console.Write(_profile[i][2].ToString("N1") + "\t");
+                        Console.Write(_profile[i][3].ToString("N1") + "\t");
+                        Console.Write(_profile[i][4].ToString("N0") + "\t");
+                        Console.Write(_profile[i][5].ToString("N0") + "\t");
+                        Console.Write(_profile[i][6].ToString("N0") + "\t");
+                        Console.Write(_profile[i][7].ToString("N2") + "\t");
+                        Console.WriteLine(_profile[i][8].ToString("N2") + "\t");
                     }
                     return (KodBledu, _profile);
 

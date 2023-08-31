@@ -25,7 +25,7 @@ namespace Symulation
         private List<Permutation> _list_of_end_permutations;
 
         private List<int> _list_of_tracks_in_section;
-        private Section_config_DC section_config;
+        private Section_config_DC_velocity section_config;
         private List<Traverse> _list_of_traverses;      
         private bool is_synchronization_defined;
         private double synchronization_time;
@@ -52,12 +52,13 @@ namespace Symulation
             // a wyglada na to ze podczas generowania interakcji ta operacja jest powtarzana
             // ta operacja jest powtarzana dla kazdej sekcji co jest szalone, trzeba zadbac zeby nic zlego sie przez to niedzialo
             // lub wykonywac ta operacje tylko na stacja danej sekcji
-            
+            // to wymaga posprzatania
+
             prepare_list_of_permutations();
             prepare_list_of_priority_permutations(list_of_priority_permutation_directions);
             prepare_list_of_start_permutation();
             prepare_list_of_end_permutations();
-
+            calculate_entrance_and_exit_speed_for_each_permutations(_list_of_permutations);
 
             calculate_max_size_of_traverse_for_each_permutation_of_section();
             mark_all_track_in_permutations();
@@ -70,7 +71,7 @@ namespace Symulation
             _list_of_permutations.Reverse();
 
             //section config for each posible permutation
-            section_config = new Section_config_DC(cityData, list_of_I_nodes, list_of_O_nodes, _list_of_permutations,_list_of_priority_permutations,_list_of_start_permutations,_list_of_end_permutations, _list_of_tracks_in_section , DC_length);
+            section_config = new Section_config_DC_velocity(cityData, list_of_I_nodes, list_of_O_nodes, _list_of_permutations,_list_of_priority_permutations,_list_of_start_permutations,_list_of_end_permutations, _list_of_tracks_in_section , DC_length);
             //Console.WriteLine("  ");
             //Console.WriteLine("Section number: {0}", _number_Of_Section);
 
@@ -99,6 +100,29 @@ namespace Symulation
         //{
         //     return section_config.get_config_for_node(node_number);
         //}
+        private void calculate_entrance_and_exit_speed_for_each_permutations(List<Permutation> permutations)
+        {
+            foreach(Permutation permutation in permutations)
+            {
+                calculate_speed_at_entrance(permutation);
+                calculate_speed_at_exit(permutation);
+            }
+        }
+        private void calculate_speed_at_exit(Permutation permutation)
+            {
+                var route = permutation.Get_route();
+                var index_of_last_track = route.GetLength(0) - 1;
+                int last_track = route[index_of_last_track][2];
+
+                permutation.set_exit_speed(CityMap.GetSpeedLimitForTrack_m_s(last_track));
+            }
+
+        private void calculate_speed_at_entrance(Permutation permutation)
+        {
+            var route = permutation.Get_route();
+            int first_track = route[0][2];
+            permutation.set_entrance_speed(CityMap.GetSpeedLimitForTrack_m_s(first_track));
+        }
 
         public override int get_max_number_of_active_exit_windows()
         {
@@ -687,7 +711,7 @@ namespace Symulation
             // that is a test, can pod accelerate at the end to final speed
             // that is a test, can pod brake at the begining speed
             var Profile = new FastestProfile(route_deep_copy, CityMapCopy);
-            (error_code, profile) = Profile.ProfileBetweenNodes(acceleration);    
+            (error_code, profile) = Profile.ProfileBetweenNodes();    
             if (error_code != 0) return error_code;
 
             //test , are all accelerations free off intersection in profile ?   sadzac po tym jak sie zachowuja wyniki ten test zawodzi i przepuszacza
@@ -717,7 +741,7 @@ namespace Symulation
             // that is a test, can pod accelerate at the end to final speed
             // that is a test, can pod brake at the begining speed
             Profile = new FastestProfile(route_deep_copy, CityMapCopy);
-            (error_code, profile) = Profile.ProfileBetweenNodes(acceleration);
+            (error_code, profile) = Profile.ProfileBetweenNodes();
             if (error_code != 0)
                 return error_code;
 

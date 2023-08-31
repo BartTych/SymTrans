@@ -22,6 +22,7 @@ namespace Symulation
         //private readonly CityDataStorage city;
 
         private List<SchematicComponent> list_of_schematic_components_along_permutation;
+        private List<double[]> travel_time_table;
         private int[][] _route;
 
         public Permutation(int number, int start_node, int end_node, int section_number)
@@ -46,6 +47,17 @@ namespace Symulation
             permutation._route = Get_deep_copy_of_route();
             return permutation;
         }
+
+        public void add_time_to_travel_time_table(double start, double end, int node)
+        {
+            travel_time_table.Add(new double[]{start, end, node});
+        }
+
+        public void shift_travel_time_table()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Traverse> get_list_of_traverses()
         {
             return _list_of_traverses;

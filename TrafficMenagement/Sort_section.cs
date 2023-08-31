@@ -676,7 +676,7 @@ namespace Symulation
             // that is a test, can pod accelerate at the end to final speed
             // that is a test, can pod brake at the begining speed
             var Profile = new FastestProfile(route_deep_copy, CityMapCopy);
-            (error_code, profile) = Profile.ProfileBetweenNodes(acceleration);
+            (error_code, profile) = Profile.ProfileBetweenNodes();
             if (error_code != 0) return error_code;
 
             //test , are all accelerations free off intersection in profile ?   sadzac po tym jak sie zachowuja wyniki ten test zawodzi i przepuszacza
@@ -706,7 +706,7 @@ namespace Symulation
             // that is a test, can pod accelerate at the end to final speed
             // that is a test, can pod brake at the begining speed
             Profile = new FastestProfile(route_deep_copy, CityMapCopy);
-            (error_code, profile) = Profile.ProfileBetweenNodes(acceleration);
+            (error_code, profile) = Profile.ProfileBetweenNodes();
             if (error_code != 0)
                 return error_code;
 
